@@ -12,7 +12,7 @@ public class MainMenu : MonoBehaviour
     public void ValidateInput()
     {
         string input = inputField.text;
-
+        int intValue = 1;
         if (input.Length == 0) 
         {
             resultText.text = "Please enter the number";
@@ -21,7 +21,24 @@ public class MainMenu : MonoBehaviour
         else
         {
             resultText.text = "";
+            switch (input)
+            {
+                case "1":
+                    intValue = 1; // Your integer value
+                    break;
+                case "2":
+                    intValue = 2; // Your integer value
+                    break;
+
+            }
+            PlayerPrefs.SetInt("IntValue", intValue);
             SceneManager.LoadScene("SampleScene");
+
+        }
+       
+        if (input == "1")
+        {
+
         }
     }
 }

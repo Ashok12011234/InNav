@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class person : MonoBehaviour
 {
@@ -28,6 +29,10 @@ public class person : MonoBehaviour
         //transform.position = transform.position + (Vector3.right * moveSpeed);
         //transform.Translate(Input.acceleration.x * moveSpeed, 0, -Input.acceleration.z * moveSpeed);
         
+        if (Input.GetKeyDown(KeyCode.Escape)) 
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
 
     }
 }

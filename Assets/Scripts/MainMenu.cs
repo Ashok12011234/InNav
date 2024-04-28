@@ -8,7 +8,15 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
-    
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+    }
     public void ValidateInput()
     {
         string input = inputField.text;

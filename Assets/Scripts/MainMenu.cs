@@ -40,10 +40,5 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene("SampleScene");
 
         }
-       
-        if (input == "1")
-        {
-
-        }
     }
 }

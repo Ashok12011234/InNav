@@ -357,6 +357,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 3308574425785266426, guid: 1526886cff4ef4a7c92b55df8723b6dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308574425785266426, guid: 1526886cff4ef4a7c92b55df8723b6dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380959507848519217, guid: 1526886cff4ef4a7c92b55df8723b6dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380959507848519217, guid: 1526886cff4ef4a7c92b55df8723b6dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -587,7 +607,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -129
+      value: -145
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
@@ -597,7 +617,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -378
+      value: -423.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
@@ -612,12 +632,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
@@ -648,6 +668,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: lego obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6429bb952575341efa6c9f44fe02eae6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1603246306389932429, guid: 6429bb952575341efa6c9f44fe02eae6,
         type: 3}
@@ -716,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 999202f08e678428fb741761382f1e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.02
+  compassSmooth: 0.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +755,7 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194230}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194231}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -840,6 +866,20 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b0815562de94369ab59d7e4854f8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Camera: {fileID: 0}
+  Rotate: 0
 --- !u!1 &1236004025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,7 +1269,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 935281802}
   - {fileID: 73239365}
   - {fileID: 1878007236}
   - {fileID: 80227884}
@@ -1237,3 +1276,4 @@ SceneRoots:
   - {fileID: 569735091}
   - {fileID: 1236004029}
   - {fileID: 197014917}
+  - {fileID: 935281802}

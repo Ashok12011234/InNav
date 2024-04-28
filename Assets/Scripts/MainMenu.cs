@@ -8,7 +8,12 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] InputField inputField;
     [SerializeField] Text resultText;
-    
+
+    void Start()
+    {
+        TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true);
+    }
+
     public void ValidateInput()
     {
         string input = inputField.text;
